@@ -1,0 +1,69 @@
+{
+  "name": "kotchi-ui-kit",
+  "version": "1.0.0",
+  "description": "UI kit built with KotchiUI framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config .env/webpack/prod.js",
+    "build-dev": "webpack --config .env/webpack/dev.js",
+    "build-docs": "docs-builder --projectName \"Kotchi UI\" --scriptPath \"dist/kotchi-ui.js\"",
+    "build-w-docs": "npm run build && npm run build-docs",
+    "build-dev-w-docs": "npm run build-dev && npm run build-docs",
+    "test": "jest --config .env/jest/config.js --env=jest-environment-happy-dom -i",
+    "start": "webpack-dev-server --open --config .env/webpack/dev.js",
+    "lint": "./node_modules/eslint/bin/eslint.js src",
+    "create-component": "node cli/createComponent.js",
+    "prepack": "node .env/build-scripts/prepack.js",
+    "postpack": "node .env/build-scripts/postpack.js",
+    "storybook": "start-storybook -p 6006 --config-dir .env/.storybook",
+    "build-storybook": "build-storybook --config-dir .env/.storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotchi-ui/kotchi-ui-kit.git"
+  },
+  "author": "Ahmad Rida Igbariya <ahmad.rida.igbariya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kotchi-ui/kotchi-ui-kit/issues"
+  },
+  "homepage": "https://github.com/kotchi-ui/kotchi-ui-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/preset-env": "^7.9.5",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/html": "^5.3.18",
+    "@webcomponents/webcomponentsjs": "^2.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.2",
+    "css-to-string-loader": "^0.1.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.7.6",
+    "happy-dom": "^0.10.5",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "jest": "^24.9.0",
+    "jest-environment-happy-dom": "0.0.36",
+    "prettier": "2.0.5",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.42.1",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "kotchi-core": "file:../kotchi-core",
+    "lodash": "^4.17.15"
+  }
+}

@@ -1,0 +1,57 @@
+{
+	"id": "icon",
+	"category": "components",
+	"title": "Icon",
+	"tagName": "kui-icon",
+	"subtitle": "You can place KotchiUI Font Awesome icons just about anywhere in the page",
+	"cards": [
+		{
+			"id": "attributes-configurations",
+			"title": "Attributes Configurations",
+			"subtitle": "Kotchi UI Font Awesome icons are very flexable to configure and control",
+			"contents": "attributes-configurations.html"
+		},
+		{
+			"id": "basic-examples",
+			"title": "Basic Examples",
+			"subtitle": "KotchiUI Font Awesome icons are accessable, fully controled as regular font awesome icons",
+			"contents": "icon-example.html"
+		},
+		{
+			"id": "kui-size-example",
+			"title": "Sizing Icons",
+			"subtitle": "KotchiUI gives some basic controls for sizing icons in the context of your page’s UI.",
+			"contents": "size-example.html"
+		},
+		{
+			"id": "kui-pulled-example",
+			"title": "Pulled Icons",
+			"subtitle": "Occasionally you might want to wrap text around an icon.",
+			"contents": "pulled-example.html"
+		},
+		{
+			"id": "kui-animate-example",
+			"title": "Animating Icons",
+			"subtitle": "Enable animation on icons to simulate loading or communicating state",
+			"contents": "animating-example.html"
+		},
+		{
+			"id": "kui-rotate-example",
+			"title": "Rotating and Flipping Icons",
+			"subtitle": "Sometimes you need to rotate, flip, or mirror an icon for it to work in your project or design.",
+			"contents": "rotating-example.html"
+		},
+		{
+			"id": "kui-fixed-width-example",
+			"title": "Fixed Width Icons",
+			"subtitle": "Need to vertically align a series of icons, like in a list or navigation menu? We’ve included a fixed-width support styling for just those cases.",
+			"contents": "fixed-width-example.html"
+		},
+		{
+			"id": "kui-bordered-example",
+			"title": "Bordered Icons",
+			"subtitle": "Occasionally you might want to give icons some visual distinction with a border.",
+			"contents": "bordered-example.html"
+		}
+	]
+}

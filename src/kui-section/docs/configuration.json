@@ -1,0 +1,45 @@
+{
+	"id": "section",
+	"category": "components",
+	"title": "Section",
+	"tagName": "kui-section",
+	"subtitle": "<code>&lt;kui-section&gt;</code> provide a flexible and extensible content container with multiple variants and options",
+	"cards": [
+		{
+			"id": "example-attributes",
+			"title": "Attributes Configurations",
+			"subtitle": "Configure <code>&lt;kui-section&gt;</code> through the following attributes",
+			"contents": "example-attributes.html"
+		},
+		{
+			"id": "example-basic",
+			"title": "Basic Examples",
+			"subtitle": "The basic usage of <code>&lt;kui-section&gt;</code> is to provide a container for your contents",
+			"contents": "example-basic.html"
+		},
+		{
+			"id": "example-style",
+			"title": "Section styles",
+			"subtitle": "<code>&lt;kui-section&gt;</code> include various options for customizing their backgrounds, borders, and color",
+			"contents": "example-style.html"
+		},
+		{
+			"id": "example-collapse",
+			"title": "Section visibility",
+			"subtitle": "Control <code>&lt;kui-section&gt;</code> visibility by collapsing the contents and expanding",
+			"contents": "example-collapse.html"
+		},
+		{
+			"id": "example-fullscreen",
+			"title": "Fullscreen Mode",
+			"subtitle": "<code>&lt;kui-section&gt;</code> can be expanded to fill the screen for maximum visibility",
+			"contents": "example-fullscreen.html"
+		},
+		{
+			"id": "example-close",
+			"title": "Closing the section",
+			"subtitle": "<code>&lt;kui-section&gt;</code> can be closed and removed from the page",
+			"contents": "example-close.html"
+		}
+	]
+}

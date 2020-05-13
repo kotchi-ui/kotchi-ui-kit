@@ -1,0 +1,33 @@
+{
+	"id": "accordion",
+	"category": "components",
+	"title": "Accordion",
+	"tagName": "kui-accordion",
+	"subtitle": "<code>&lt;kui-accordion&gt;</code> provide an accordion layout for a group of sections",
+	"cards": [
+		{
+			"id": "example-attributes",
+			"title": "Attributes Configurations",
+			"subtitle": "Configure <code>&lt;kui-accordion&gt;</code> through the following attributes",
+			"contents": "example-attributes.html"
+		},
+		{
+			"id": "example-basic",
+			"title": "Basic Examples",
+			"subtitle": "The basic usage of <code>&lt;kui-accordion&gt;</code> is to provide an accordion container for your sections",
+			"contents": "example-basic.html"
+		},
+		{
+			"id": "example-auto-collapse",
+			"title": "Section visibility",
+			"subtitle": "Control <code>&lt;kui-accordion&gt;</code> sections' visibility by auto collapsing them while keeping only one visible section at a time",
+			"contents": "example-auto-collapse.html"
+		},
+		{
+			"id": "example-expanded-child",
+			"title": "Initial expanded section",
+			"subtitle": "The initially expanded section, only relevant when <code>kui-auto-collapse</code> is set to true",
+			"contents": "example-expanded-child.html"
+		}
+	]
+}

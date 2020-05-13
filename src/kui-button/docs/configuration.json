@@ -1,0 +1,39 @@
+{
+	"id": "button",
+	"category": "components",
+	"title": "Button",
+	"tagName": "kui-button",
+	"subtitle": "Use Kotchi UI custom buttons that are built upon Bootstrap’s button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.",
+	"cards": [
+		{
+			"id": "attributes-configurations",
+			"title": "Attributes Configurations",
+			"subtitle": "Kotchi UI buttons are very flexable to configure and control",
+			"contents": "attributes-configurations.html"
+		},
+		{
+			"id": "basic-examples",
+			"title": "Basic Examples",
+			"subtitle": "With Kotchi UI you can easily create buttons with configurable predefined styles",
+			"contents": "basic-examples.html"
+		},
+		{
+			"id": "kui-size-example",
+			"title": "Button Different Sizes",
+			"subtitle": "In need for different button sizes, no worries we have 4 different sizes for your convenient.",
+			"contents": "sizes-examples.html"
+		},
+		{
+			"id": "kui-outline-example",
+			"title": "Outline buttons",
+			"subtitle": "In need of a button, but not the hefty background colors they bring? add the <code>kui-outline</code> attribute to remove all background images and colors on any button.",
+			"contents": "outline-examples.html"
+		},
+		{
+			"id": "kui-disabled-example",
+			"title": "Disabled state",
+			"subtitle": "Make buttons look inactive by adding the kui-disabled boolean attribute to any <code>&lt;kui-button&gt;</code> element.",
+			"contents": "disabled-examples.html"
+		}
+	]
+}

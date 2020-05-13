@@ -1,0 +1,19 @@
+<template id="additional_info">
+	<p>
+		set the attribute kui-fixed-width to true on the kui-icon element to set
+		one or more icons to the same fixed width. This is great to use when
+		varying icon widths (e.g. a tall but skinny icon atop a wide but short
+		icon) would throw off vertical alignment. For clarity in the following
+		example, we've added a background color on the icon so you can see the
+		fixed width and also bumped up the font-size of the parent element.
+	</p>
+</template>
+<template id="preview">
+	<div style="font-size: 2rem;">
+		<div><kui-icon kui-icon="fas fa-skating" kui-fixed-width style="background:DodgerBlue"></kui-icon> Skating</div>
+		<div><kui-icon kui-icon="fas fa-skiing" kui-fixed-width style="background:SkyBlue"></kui-icon> Skiing</div>
+		<div><kui-icon kui-icon="fas fa-skiing-nordic" kui-fixed-width style="background:DodgerBlue"></kui-icon> Nordic Skiing</div>
+		<div><kui-icon kui-icon="fas fa-snowboarding" kui-fixed-width style="background:SkyBlue"></kui-icon> Snowboarding</div>
+		<div><kui-icon kui-icon="fas fa-snowplow" kui-fixed-width style="background:DodgerBlue"></kui-icon> Snowplow</div>
+	</div>
+</template>
