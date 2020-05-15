@@ -52,8 +52,10 @@
     "happy-dom": "^0.10.5",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "husky": "^4.2.5",
     "jest": "^24.9.0",
     "jest-environment-happy-dom": "0.0.36",
+    "lint-staged": "^10.2.2",
     "prettier": "2.0.5",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
@@ -63,7 +65,15 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "kotchi-core": "file:../kotchi-core",
+    "kotchi-core": "1.0.0",
     "lodash": "^4.17.15"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "prettier --write"]
   }
 }
