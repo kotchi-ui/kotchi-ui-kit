@@ -4,7 +4,6 @@ module.exports = {
     es2020: true,
     jest: true,
     node: true,
-    amd: true,
   },
   parser: "babel-eslint",
   parserOptions: {

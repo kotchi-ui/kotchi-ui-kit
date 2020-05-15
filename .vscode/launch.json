@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Jest Tests",
-            "program": "${workspaceRoot}\\node_modules\\jest\\bin\\jest",
+            "program": "${workspaceRoot}/node_modules/jest/bin/jest",
             "args": ["-i", "--env=jest-environment-happy-dom"] 
         }
     ]

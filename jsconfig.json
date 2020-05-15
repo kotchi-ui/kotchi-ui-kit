@@ -1,9 +1,7 @@
 {
-	"compilerOptions": {
-		"target": "esnext",
-		"module": "umd",
-		"moduleResolution": "node",
-		"experimentalDecorators": true
-	},
-	"include": ["src/**/*", "index.js"]
+  "compilerOptions": {
+    "target": "esnext",
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*", "index.js"]
 }

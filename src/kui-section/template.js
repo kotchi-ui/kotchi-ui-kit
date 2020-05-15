@@ -1,8 +1,8 @@
 import style from "./style.scss";
 
 export default function templateGenerator(tagName) {
-	const template = document.createElement("template");
-	template.innerHTML = `
+  const template = document.createElement("template");
+  template.innerHTML = `
         <style>
             ${style}
         </style>
@@ -31,22 +31,22 @@ export default function templateGenerator(tagName) {
         </div>
     `;
 
-	window.ShadyCSS && window.ShadyCSS.prepareTemplate(template, tagName);
+  window.ShadyCSS && window.ShadyCSS.prepareTemplate(template, tagName);
 
-	return {
-		template,
-		selectors: {
-			section: ".card",
-			header: ".card-header",
-			headerIcon: ".card-header__icon",
-			headerTitle: ".card-header__title",
-			headerActions: ".card-header__actions",
-			collapseAction: "#collapseAction",
-			fullScreenAction: "#fullScreenAction",
-			closeAction: "#closeAction",
-			contentsContainer: "#contents-container",
-			contents: "#contentsSlot",
-			footer: "#footerSlot",
-		},
-	};
+  return {
+    template,
+    selectors: {
+      section: ".card",
+      header: ".card-header",
+      headerIcon: ".card-header__icon",
+      headerTitle: ".card-header__title",
+      headerActions: ".card-header__actions",
+      collapseAction: "#collapseAction",
+      fullScreenAction: "#fullScreenAction",
+      closeAction: "#closeAction",
+      contentsContainer: "#contents-container",
+      contents: "#contentsSlot",
+      footer: "#footerSlot",
+    },
+  };
 }
