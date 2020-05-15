@@ -3,7 +3,7 @@
  */
 
 import { Window } from "happy-dom";
-import "../kui-section";
+import "../";
 
 const window = new Window();
 const document = window.document;

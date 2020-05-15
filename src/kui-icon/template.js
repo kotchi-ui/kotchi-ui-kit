@@ -1,9 +1,7 @@
-import style from "./style.css";
-
 export default function templateGenerator(tagName) {
   const template = document.createElement("template");
   template.innerHTML = `
-		<style>${style}</style>
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 		<i class=""></i>
 	`;
 
