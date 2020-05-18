@@ -28,17 +28,5 @@ export const basicUsage = () => {
     ${outline ? "kui-outline" : ""}
     ${disabled ? "kui-disabled" : ""}
 >${label}</kui-button>
-<div>
-<pre>
-    <code>
-    &lt;kui-button kui-style="${style}"${
-    size ? ' kui-size="' + size + '"' : ""
-  }${outline ? " kui-outline" : ""}${
-    disabled ? " kui-disabled" : ""
-  }&gt;${label}&lt;/kui-button&gt;
-    </code>
-</pre>
-  </div>
-
-`;
+<h5>Use Knobs to see different states of the component</h5>`;
 };

@@ -27,10 +27,10 @@ export const basicUsage = () => {
     false,
     groupId
   );
-  const kuiCollapsedBy = select(
+  const kuiCollapseBy = select(
     "Section collapsed by (kui-collapsed-by)",
     enumValues(KUISection.CollapseBy),
-    KUISection.CollapseBy.ByHeader,
+    KUISection.CollapseBy.None,
     groupId
   );
   const kuiCollapsed = boolean(
@@ -56,38 +56,18 @@ export const basicUsage = () => {
   );
 
   return `
-  <kui-section 
-  kui-header-title=${kuiHeaderTitle}
-  kui-header-icon=${kuiHeaderIcon}
-  kui-style="${kuiStyle}"
-    ${kuiCollapsedBy ? " kui-collapsed-by='" + kuiCollapsedBy + "'" : ""}
-    ${kuiOutline ? " kui-outline" : ""}
-    ${kuiCollapsed ? " kui-collapsed" : ""}
-    ${kuiClosable ? " kui-closable" : ""}
-    ${kuiAllowFullscreen ? " kui-allow-fullscreen" : ""}
->
-    <p>Section contents</p>
-    ${footer ? "<div slot='footer'>" + footer + "</div>" : ""}
-</kui-section>
-<div>
-<pre>
-    <code>
-&lt;kui-section 
-  kui-header-title=${kuiHeaderTitle}
-  kui-header-icon=${kuiHeaderIcon}
-  kui-style="${kuiStyle}"
-    ${kuiCollapsedBy ? " kui-collapsed-by='" + kuiCollapsedBy + "'" : ""}
-    ${kuiOutline ? " kui-outline" : ""}
-    ${kuiCollapsed ? " kui-collapsed" : ""}
-    ${kuiClosable ? " kui-closable" : ""}
-    ${kuiAllowFullscreen ? " kui-allow-fullscreen" : ""}
-&gt;
-    &lt;p&gt;Section contents&lt;/p&gt;
-    ${footer ? "&lt;div slot='footer'&gt;" + footer + "&lt;/div&gt;" : ""}
-&lt;/kui-section&gt;
-    </code>
-</pre>
-  </div>
-
-`;
+        <kui-section 
+            kui-header-title="${kuiHeaderTitle}"
+            kui-header-icon="${kuiHeaderIcon}"
+            kui-style="${kuiStyle}"
+            ${kuiCollapseBy ? " kui-collapse-by='" + kuiCollapseBy + "'" : ""}
+            ${kuiOutline ? " kui-outline" : ""}
+            ${kuiCollapsed ? " kui-collapsed" : ""}
+            ${kuiClosable ? " kui-closable" : ""}
+            ${kuiAllowFullscreen ? " kui-allow-fullscreen" : ""}
+        >
+            <p>Section contents</p>
+            ${footer ? "<div slot='footer'>" + footer + "</div>" : ""}
+        </kui-section>
+        <h5>Use Knobs to see different states of the component</h5>`;
 };

@@ -16,7 +16,7 @@ export const basicUsage = () => {
   const kuiSize = select(
     "Size (kui-size)",
     enumValues(KUIIcon.Size),
-    KUIIcon.Size.x5,
+    KUIIcon.Size.X5,
     groupId
   );
   const kuiFixedWidth = boolean(
@@ -52,35 +52,18 @@ export const basicUsage = () => {
   );
 
   return `
-  <kui-icon 
-kui-icon="${kuiIcon}"
-${kuiLabel ? " kui-label='" + kuiLabel + "'" : ""}
-${kuiSize ? " kui-size='" + kuiSize + "'" : ""}
-${kuiSize ? " kui-size='" + kuiSize + "'" : ""}
-${kuiFixedWidth ? " kui-fixed-width" : ""}
-${kuiBordered ? " kui-bordered" : ""}
-${kuiPull ? " kui-pull='" + kuiPull + "'" : ""}
-${kuiAnimate ? " kui-animate='" + kuiAnimate + "'" : ""}
-${kuiRotate ? " kui-rotate='" + kuiRotate + "'" : ""}
-${kuiFlip ? " kui-flip='" + kuiFlip + "'" : ""}
-></kui-icon>
-<div>
-<pre>
-    <code>
-&lt;kui-icon 
-kui-icon="${kuiIcon}"
-${kuiLabel ? " kui-label='" + kuiLabel + "'" : ""}
-${kuiSize ? " kui-size='" + kuiSize + "'" : ""}
-${kuiSize ? " kui-size='" + kuiSize + "'" : ""}
-${kuiFixedWidth ? " kui-fixed-width" : ""}
-${kuiBordered ? " kui-bordered" : ""}
-${kuiPull ? " kui-pull='" + kuiPull + "'" : ""}
-${kuiAnimate ? " kui-animate='" + kuiAnimate + "'" : ""}
-${kuiRotate ? " kui-rotate='" + kuiRotate + "'" : ""}
-${kuiFlip ? " kui-flip='" + kuiFlip + "'" : ""}
-&gt;&lt;/kui-icon&gt;
-    </code>
-</pre>
-  </div>
-`;
+    <kui-icon 
+        kui-icon="${kuiIcon}"
+        ${kuiLabel ? " kui-label='" + kuiLabel + "'" : ""}
+        ${kuiSize ? " kui-size='" + kuiSize + "'" : ""}
+        ${kuiSize ? " kui-size='" + kuiSize + "'" : ""}
+        ${kuiFixedWidth ? " kui-fixed-width" : ""}
+        ${kuiBordered ? " kui-bordered" : ""}
+        ${kuiPull ? " kui-pull='" + kuiPull + "'" : ""}
+        ${kuiAnimate ? " kui-animate='" + kuiAnimate + "'" : ""}
+        ${kuiRotate ? " kui-rotate='" + kuiRotate + "'" : ""}
+        ${kuiFlip ? " kui-flip='" + kuiFlip + "'" : ""}
+        >
+    </kui-icon>
+    <h5>Use Knobs to see different states of the component</h5>`;
 };

@@ -36,6 +36,7 @@ const Events = {
 };
 
 const CollapseBy = {
+  None: null,
   ByHeader: "header",
   ByIcon: "icon",
 };
