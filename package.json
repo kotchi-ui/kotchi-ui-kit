@@ -16,7 +16,7 @@
     "prepack": "node .env/build-scripts/prepack.js",
     "postpack": "node .env/build-scripts/postpack.js",
     "storybook": "start-storybook -p 6006 --config-dir .env/.storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "repository": {
     "type": "git",
