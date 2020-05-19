@@ -16,7 +16,7 @@
     "prepack": "node .env/build-scripts/prepack.js",
     "postpack": "node .env/build-scripts/postpack.js",
     "storybook": "start-storybook -p 6006 --config-dir .env/.storybook",
-    "build-storybook": "build-storybook --config-dir .env/.storybook"
+    "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "repository": {
     "type": "git",
