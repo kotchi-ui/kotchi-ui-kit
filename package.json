@@ -16,7 +16,7 @@
     "prepack": "node .env/build-scripts/prepack.js",
     "postpack": "node .env/build-scripts/postpack.js",
     "storybook": "start-storybook -p 6006 --config-dir .env/.storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "@babel/preset-env": "^7.9.5",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/html": "^5.3.18",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@webcomponents/webcomponentsjs": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^24.9.0",
