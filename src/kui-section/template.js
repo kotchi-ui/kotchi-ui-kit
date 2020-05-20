@@ -9,7 +9,7 @@ export default function templateGenerator(tagName) {
         <div class="card">
             <div class="card-header">
                 <div class="card-header__title-and-icon-container" data-toggle="collapse" data-target="#contents-container">
-                    <kui-icon class="card-header__icon"></kui-icon>
+                    <span class="card-header__icon"><kui-icon></kui-icon></span>
                     <span class="card-header__title"></span>
                 </div>
                 <div class="card-header__actions">
@@ -38,7 +38,7 @@ export default function templateGenerator(tagName) {
     selectors: {
       section: ".card",
       header: ".card-header",
-      headerIcon: ".card-header__icon",
+      headerIcon: ".card-header__icon > kui-icon",
       headerTitle: ".card-header__title",
       headerActions: ".card-header__actions",
       collapseAction: "#collapseAction",

@@ -1,7 +1,3 @@
-/**
- * There is a bug in the happy-dom that returns null when trying to get the slot
- */
-
 import { Window } from "happy-dom";
 import "../";
 
@@ -27,7 +23,7 @@ describe("Make sure component is created", () => {
     expect("kuiHeaderIcon" in kuiSection).toBe(true);
     expect("kuiStyle" in kuiSection).toBe(true);
     expect("kuiOutline" in kuiSection).toBe(true);
-    expect("kuiCollapsedBy" in kuiSection).toBe(true);
+    expect("kuiCollapseBy" in kuiSection).toBe(true);
     expect("kuiCollapsed" in kuiSection).toBe(true);
     expect("kuiClosable" in kuiSection).toBe(true);
     expect("kuiAllowFullscreen" in kuiSection).toBe(true);

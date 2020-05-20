@@ -158,9 +158,9 @@ class KUISection extends HTMLElement {
   @kuiChangeHandler
   kuiHeaderIconChangeHandler({ newValue }) {
     if (!newValue) {
-      this.elements.headerIcon.classList.add("hide");
+      this.elements.headerIcon.parentNode.classList.add("hide");
     } else {
-      this.elements.headerIcon.classList.remove("hide");
+      this.elements.headerIcon.parentNode.classList.remove("hide");
       this.elements.headerIcon.kuiIcon = newValue;
     }
   }
