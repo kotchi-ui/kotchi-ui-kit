@@ -1,22 +1,20 @@
 {
   "name": "kotchi-ui-kit",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "UI kit built with KotchiUI framework",
-  "main": "index.js",
+  "main": "kotchi-ui.js",
+  "files": [
+    "kui-*.js"
+  ],
   "scripts": {
     "build": "webpack --config .env/webpack/prod.js",
     "build-dev": "webpack --config .env/webpack/dev.js",
-    "build-docs": "docs-builder --projectName \"Kotchi UI\" --scriptPath \"dist/kotchi-ui.js\"",
-    "build-w-docs": "npm run build && npm run build-docs",
-    "build-dev-w-docs": "npm run build-dev && npm run build-docs",
     "test": "jest --config .env/jest/config.js --env=jest-environment-happy-dom -i",
     "start": "webpack-dev-server --open --config .env/webpack/dev.js",
     "lint": "./node_modules/eslint/bin/eslint.js src",
-    "create-component": "node cli/createComponent.js",
     "prepack": "node .env/build-scripts/prepack.js",
     "postpack": "node .env/build-scripts/postpack.js",
-    "storybook": "start-storybook -p 6006 --config-dir .env/.storybook",
-    "build-storybook": "build-storybook -c .storybook -o .out"
+    "storybook": "start-storybook -p 6006 --config-dir .env/.storybook"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@ module.exports = ["inline-source-map"].map((devtool) => ({
 	...baseConf,
 	mode: "development",
 	entry: {
-		ui: "./index.js",
+		ui: "./src/index.js",
 	},
 	devtool,
 	optimization: {

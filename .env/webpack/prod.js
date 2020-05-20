@@ -22,7 +22,7 @@ const buildConf = async () => {
 
 async function addComponentsEntries() {
 	const entries = {
-		ui: "./index.js",
+		"kotchi-ui": "./src/index.js",
 	};
 	const dirents = await fs.readdir("./src", {
 		withFileTypes: true,

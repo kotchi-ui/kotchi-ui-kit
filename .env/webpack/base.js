@@ -2,13 +2,6 @@ const path = require("path");
 const __rootDir = "../..";
 
 const conf = {
-	resolve: {
-		// alias: {
-		// 	Base: path.resolve(__dirname, `"src/base/`),
-		// 	Components: path.resolve(__dirname, "src/components/"),
-		// 	Utils: path.resolve(__dirname, "src/utils/"),
-		// },
-	},
 	module: {
 		rules: [
 			{
@@ -33,9 +26,7 @@ const conf = {
 						plugins: [
 							"@babel/plugin-proposal-object-rest-spread",
 							["@babel/plugin-proposal-decorators", { legacy: true }],
-							["@babel/plugin-proposal-class-properties", { loose: true }],
-							// ["js-logger", { format: { separator: "/", project: false } }],
-						],
+							["@babel/plugin-proposal-class-properties", { loose: true }]						],
 					},
 				},
 			},
@@ -43,8 +34,8 @@ const conf = {
 	},
 	output: {
 		path: path.resolve(__dirname, `${__rootDir}/dist`),
-		filename: "kotchi-[name].js",
-		library: ["kotchiUI", "KUI[name]"],
+		filename: "[name].js",
+		library: ["kotchiUI", "[name]"],
 		libraryTarget: "umd",
 	},
 };
