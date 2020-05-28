@@ -1,6 +1,6 @@
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
-import { enumValues } from "./storyUtils";
-import { KUISection } from "../";
+import { enumValues } from "../utils/storyUtils";
+import KUISection from "./";
 
 export default { title: "Section <kui-section>", decorators: [withKnobs] };
 

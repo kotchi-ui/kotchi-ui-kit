@@ -26,7 +26,7 @@ const { booleanSetter, booleanGetter, useShadowDom } = CustomElementUtils;
 class KUIAccordion extends HTMLElement {
   @kuiAttributeValidator([typeValidator(Types.Number)])
   @kuiAttribute
-  kuiExpandedChildIndex = 0;
+  kuiExpandedIndex = 0;
 
   @kuiAttributeValidator([typeValidator(Types.Boolean)])
   @kuiAttribute({ setter: booleanSetter, getter: booleanGetter })
@@ -51,7 +51,6 @@ class KUIAccordion extends HTMLElement {
   }
 
   sectionExpandChangedHandler(index, expanded) {
-    // logger.info(`Section ${index + 1} is now ${expanded ? "expanded" : "collapsed"}`);
     if (
       expanded &&
       this.kuiAutoCollapse &&
@@ -76,7 +75,7 @@ class KUIAccordion extends HTMLElement {
   }
 
   @kuiChangeHandler
-  kuiExpandedChildIndexChangeHandler({ newValue }) {
+  kuiExpandedIndexChangeHandler({ newValue }) {
     this.expandSection(Number.parseInt(newValue));
   }
 
@@ -94,7 +93,7 @@ class KUIAccordion extends HTMLElement {
   collapseAllKeepingOneExpanded() {
     const lastExpandedIndex =
       this._lastExpandedIndex === -1
-        ? Number.parseInt(this.kuiExpandedChildIndex)
+        ? Number.parseInt(this.kuiExpandedIndex)
         : this._lastExpandedIndex;
     this.elements.sections.forEach((section, index) => {
       if (index !== lastExpandedIndex) {

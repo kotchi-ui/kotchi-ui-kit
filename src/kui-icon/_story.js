@@ -1,5 +1,5 @@
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
-import { enumValues } from "../storyUtils";
+import { enumValues } from "../utils/storyUtils";
 import KUIIcon from "./kui-icon";
 
 export default { title: "FA Icon <kui-icon>", decorators: [withKnobs] };

@@ -25,7 +25,7 @@ in HTML
     <!-- ... -->
     <!-- Polyfill for older browsers and those who don't support web components -->
 	<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.4.0/webcomponents-loader.js"></script>
-	<script src="https://unpkg.com/kotchi-ui/kotchi-button.js"></script>
+	<script src="https://unpkg.com/@kotchi-ui/ui-kit/kui-button.js"></script>
 </head>
 <body>
 <!-- ... -->
@@ -38,7 +38,7 @@ in HTML
 
 in Javascript
 ```js
-import KUIButton from "kotchi-ui/kui-button";
+import KUIButton from "@kotchi-ui/ui-kit/kui-button";
 
 //...
 

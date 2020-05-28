@@ -1,6 +1,5 @@
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
-import { enumValues } from "../storyUtils";
-import KUIAccordion from "./";
+import "./";
 
 export default { title: "Accordion <kui-accordion>", decorators: [withKnobs] };
 
@@ -18,7 +17,11 @@ export const basicUsage = () => {
   );
   return `
     <kui-accordion 
-        ${kuiExpandedChildIndex ? " kui-expanded-child-index='" + kuiExpandedChildIndex + "'" : ""}
+        ${
+          kuiExpandedChildIndex
+            ? " kui-expanded-child-index='" + kuiExpandedChildIndex + "'"
+            : ""
+        }
         ${kuiAutoCollapse ? " kui-auto-collapse" : ""}
     >
 		<kui-section kui-collapse-by="header" kui-style="primary" kui-header-title="at auctor" kui-outline>

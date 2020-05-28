@@ -1,6 +1,6 @@
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
-import { enumValues } from "./storyUtils";
-import { KUIButton } from "../";
+import { enumValues } from "../utils/storyUtils";
+import KUIButton from "./";
 
 export default { title: "Button <kui-button>", decorators: [withKnobs] };
 
