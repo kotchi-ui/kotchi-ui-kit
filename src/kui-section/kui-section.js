@@ -8,7 +8,7 @@ import {
   typeValidator,
   isTrueAttribute,
   CustomElementUtils,
-} from "kotchi-core";
+} from "@kotchi-ui/core";
 import KUIIcon from "../kui-icon";
 import templateGenerator from "./template";
 

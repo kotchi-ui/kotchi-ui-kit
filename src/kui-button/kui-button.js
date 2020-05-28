@@ -9,7 +9,7 @@ import {
   typeValidator,
   isTrueAttribute,
   CustomElementUtils,
-} from "kotchi-core";
+} from "@kotchi-ui/core";
 
 import templateGenerator from "./template";
 

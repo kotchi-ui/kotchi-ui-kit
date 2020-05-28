@@ -8,7 +8,7 @@ import {
   typeValidator,
   isTrueAttribute,
   CustomElementUtils,
-} from "kotchi-core";
+} from "@kotchi-ui/core";
 
 import "../kui-section";
 import { Events as KUISectionEvents } from "../kui-section";

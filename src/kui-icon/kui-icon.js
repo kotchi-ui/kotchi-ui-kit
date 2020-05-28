@@ -7,7 +7,7 @@ import {
   Types,
   typeValidator,
   CustomElementUtils,
-} from "kotchi-core";
+} from "@kotchi-ui/core";
 import templateGenerator, { screanReaderCreator } from "./template";
 
 const tagName = "kui-icon";

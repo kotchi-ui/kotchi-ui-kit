@@ -1,6 +1,6 @@
 {
-  "name": "kotchi-ui-kit",
-  "version": "1.0.2",
+  "name": "@kotchi-ui/ui-kit",
+  "version": "0.1.2",
   "description": "UI kit built with KotchiUI framework",
   "main": "kotchi-ui.js",
   "files": [
@@ -64,7 +64,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "kotchi-core": "1.0.0",
+    "@kotchi-ui/core": "0.1.0",
     "lodash": "^4.17.15"
   },
   "husky": {
