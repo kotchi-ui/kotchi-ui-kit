@@ -39,14 +39,12 @@ const Size = {
  *
  * @element kui-button
  *
- * @slot - The default slot act as the button's inner html
- *
  */
 @kuiCustomElement({ tagName })
 class KUIButton extends HTMLElement {
   /**
    * Predefined styles that serves different semantic purposes
-   * @type {"kui-button-primary"|"kui-button-secondary"|"kui-button-info"|"kui-button-danger"|"kui-button-warning"|"kui-button-success"|"kui-button-link"}
+   * @type {Style}
    * @attr kui-style
    */
   @kuiAttributeValidator([typeValidator(Style)])
@@ -54,7 +52,7 @@ class KUIButton extends HTMLElement {
   kuiStyle = Style.Secondary;
   /**
    * Predefined sizes smaller or bigger than the default one
-   * @type {null|"kui-button-small"|"kui-button-large"|"kui-button-block"}
+   * @type {Size}
    * @attr kui-size
    */
   @kuiAttributeValidator([typeValidator(Size)])

@@ -1,0 +1,71 @@
+{
+  "name": "Button",
+  "description": "`{{toTagName name}}` is a button that has predefined styles and sizes to serve different semantic purposes with few extras.",
+  "allowedChildren": [],
+  "allowedParents": [],
+  "attributes": [
+    {
+      "name": "kui-style",
+      "description": "Predefined styles that serves different semantic purposes",
+      "type": "Style",
+      "defaultValue": "Style.Secondary",
+      "values": {
+        "Primary": "{{toTagName name}}-primary",
+        "Secondary": "{{toTagName name}}-secondary",
+        "Information": "{{toTagName name}}-info",
+        "Danger": "{{toTagName name}}-danger",
+        "Warning": "{{toTagName name}}-warning",
+        "Success": "{{toTagName name}}-success",
+        "Link": "{{toTagName name}}-link"
+      }
+    },
+    {
+      "name": "kui-size",
+      "description": "Predefined sizes smaller or bigger than the default one",
+      "type": "Size",
+      "defaultValue": "Size.Normal",
+      "values": {
+        "Normal": "null",
+        "Small": "{{toTagName name}}-small",
+        "Large": "{{toTagName name}}-large",
+        "Block": "{{toTagName name}}-block"
+      }
+    },
+    {
+      "name": "kui-outline",
+      "description": "Display the button in an outline style",
+      "type": "Boolean",
+      "defaultValue": "false"
+    },
+    {
+      "name": "kui-disabled",
+      "description": "Sets the button in a disabled state",
+      "type": "Boolean",
+      "defaultValue": "false"
+    }
+  ],
+  "publicAPI": [
+    {
+      "name": "addClickHandler",
+      "description": "Adds a click handler to the button handlers list",
+      "params": [
+        {
+          "name": "handler",
+          "type": "function",
+          "description": "The handler method to be added"
+        }
+      ]
+    },
+    {
+      "name": "removeClickHandler",
+      "description": "Removes the given handler from the button handlers list",
+      "params": [
+        {
+          "name": "handler",
+          "type": "function",
+          "description": "The handler method to be removed"
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,8 @@
     "lint": "./node_modules/eslint/bin/eslint.js src",
     "prepack": "node .env/build-scripts/prepack.js",
     "postpack": "node .env/build-scripts/postpack.js",
-    "storybook": "start-storybook -p 6006 --config-dir .env/.storybook"
+    "storybook": "start-storybook -p 6006 --config-dir .env/.storybook",
+    "create-component": "node ./node_modules/@kotchi-ui/cli/lib/kui.js generate component"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
     "@babel/preset-env": "^7.9.5",
+    "@kotchi-ui/cli": "^0.1.4",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/html": "^5.3.19",
     "@storybook/storybook-deployer": "^2.8.6",

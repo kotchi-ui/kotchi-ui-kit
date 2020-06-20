@@ -1,0 +1,98 @@
+{
+  "name": "Icon",
+  "description": "`{{toTagName name}}` wraps Font Awesome free plan icons, {{toLink 'Solid' 'https://fontawesome.com/icons?d=gallery&s=solid&m=free'}} and {{toLink 'Brands' 'https://fontawesome.com/icons?s=brands&m=free'}}, it'll enable you to configure the icon in a declarative way instead of using class names.",
+  "allowedChildren": [],
+  "allowedParents": [],
+  "attributes": [
+    {
+      "name": "kui-label",
+      "description": "The icon's label, used for screen readers",
+      "type": "String"
+    },
+    {
+      "name": "kui-icon",
+      "description": "Predefined name of the icon to be displayed, {{toLink 'set of available icons' 'https://fontawesome.com/icons?d=gallery'}}",
+      "type": "String"
+    },
+    {
+      "name": "kui-size",
+      "description": "The size of the icon, relative to the inherited `font-size` style value, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons'}}",
+      "type": "Size",
+      "defaultValue": "Size.Normal",
+      "values": {
+        "XSmall": "fa-xs",
+        "Small": "fa-sm",
+        "Normal": "null",
+        "Large": "fa-lg",
+        "X2": "fa-2x",
+        "X3": "fa-3x",
+        "X4": "fa-4x",
+        "X5": "fa-5x",
+        "X6": "fa-6x",
+        "X7": "fa-7x",
+        "X8": "fa-8x",
+        "X9": "fa-9x",
+        "X10": "fa-10x"
+      }
+    },
+    {
+      "name": "kui-animate",
+      "description": "Makes the icon spin or have it rotate with 8 steps, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons'}}",
+      "type": "Animate",
+      "defaultValue": "Animate.None",
+      "values": {
+        "None": "null",
+        "Spin": "fa-spin",
+        "Pulse": "fa-pulse"
+      }
+    },
+    {
+      "name": "kui-flip",
+      "description": "Flips the Icon with the desired direction, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons'}}",
+      "type": "Flip",
+      "defaultValue": "Flip.None",
+      "values": {
+        "None": "null",
+        "FlipVer": "fa-flip-vertical",
+        "FlipHor": "fa-flip-horizontal",
+        "FlipBoth": "fa-flip-both"
+      }
+    },
+    {
+      "name": "kui-pull",
+      "description": "Pull quotes or article icons, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/bordered-pulled-icons'}}",
+      "type": "PullDirection",
+      "defaultValue": "PullDirection.None",
+      "values": {
+        "None": "null",
+        "Left": "fa-pull-left",
+        "Right": "fa-pull-right"
+      }
+    },
+    {
+      "name": "kui-rotate",
+      "description": "Rotates the Icon with the given angel, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons'}}",
+      "type": "Rotate",
+      "defaultValue": "Rotate.None",
+      "values": {
+        "None": "null",
+        "Rotate90": "fa-rotate-90",
+        "Rotate180": "fa-rotate-180",
+        "Rotate270": "fa-rotate-270",
+        "Rotate360": "fa-rotate-360"
+      }
+    },
+    {
+      "name": "kui-bordered",
+      "description": "Adds a border arround the icon, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/bordered-pulled-icons'}}",
+      "type": "Boolean",
+      "defaultValue": "false"
+    },
+    {
+      "name": "kui-fixed-width",
+      "description": "Apply the fixed width style on the icon, {{toLink 'more information' 'https://fontawesome.com/how-to-use/on-the-web/styling/fixed-width-icons'}}",
+      "type": "Boolean",
+      "defaultValue": "false"
+    }
+  ]
+}
